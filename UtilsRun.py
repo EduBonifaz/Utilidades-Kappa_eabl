@@ -8,3 +8,4 @@ RCRulesGen(path, spreedsheetRC)
 
 spreedsheetDCQR = "17KQ-3JoVDJyBrLevMSKelefRR7sQhqxUoIPKkTybF8"
 DCQRRulesGen(path, spreedsheetDCQR)
+
