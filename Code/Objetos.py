@@ -1,10 +1,10 @@
-from Code.Clases import DatoList, Dato, DatoConfig, DatoConfig2
+from Code.Clases import Dato
 
-PHYSICAL_PATH = DatoList("hammurabi.input.paths")
+PHYSICAL_PATH = Dato("hammurabi.input.paths")
 
 FILE_TYPE = Dato("hammurabi.input.type")
 
-EXTRA_OPTIONS = DatoConfig("hammurabi.input.options")
+EXTRA_OPTIONS = Dato("hammurabi.input.options")
 
 SCHEMA_PATH = Dato("hammurabi.input.schema.path")
 
@@ -30,45 +30,45 @@ REFUSALS = Dato("config.withRefusals")
 
 ACCEPTANCE_MIN = Dato("config.acceptanceMin")
 
-SUBSET_RULE = Dato("config.none")
+SUBSET_RULE = Dato("config.subset")
 
 MIN_THRESHOLD = Dato("config.minThreshold")
 
 TARGET_THRESHOLD = Dato("config.targetThreshold")
 
-DRILLDOWN = Dato("config.none")
+DRILLDOWN = Dato("config.drillDown")
 
-AGGREGATION = Dato("config.none")
+AGGREGATION = Dato("config.aggregation")
 
 COLUMN = Dato("config.column")
 
-COLUMNS = DatoList("config.columns")
+COLUMNS = Dato("config.columns")
 
 CONDITION = Dato("config.condition")
 
-COMPARISON = Dato("config.none")
+COMPARISON = Dato("config.comparison")
 
 DATA_SOURCE_ID_RULE = Dato("config.none")
 
-DATA_VALUES = DatoConfig2("config.dataValues")
+DATA_VALUES = Dato("config.dataValues")
 
-DATA_VALUES_COLUMN = Dato("config.none")
+DATA_VALUES_COLUMN = Dato("config.dataValuesColumn")
 
-DATA_VALUES_CONDITION = Dato("config.none")
+DATA_VALUES_CONDITION = Dato("config.dataValuesCondition")
 
 FORMAT = Dato("config.format")
 
-KEY_COLUMNS = Dato("config.none")
+KEY_COLUMNS = Dato("config.keyColumns")
 
-LOWER_BOUND = Dato("config.none")
+LOWER_BOUND = Dato("config.lowerBound")
 
-UPPER_BOUND = Dato("config.none")
+UPPER_BOUND = Dato("config.upperBound")
 
 PHYSICAL_FIELD_VALUE = Dato("config.value")
 
 PHYSICAL_FIELD_CATALOG_VALUES = Dato("config.none")
 
-VARIATION_ALLOWED = Dato("config.none")
+VARIATION_ALLOWED = Dato("config.variationAllowed")
 
 BALANCE_ACCEPTANCE_MIN = Dato("config.none")
 
