@@ -32,13 +32,15 @@ class Dato:
                 return replacequotes(value)
             elif isinstance(conf[self.path], float):
                 return replacequotes(value)
+            elif isinstance(conf[self.path], bool):
+                return replacequotes(value)
             elif isinstance(conf[self.path], list):
                 out = ""
                 for i in range(len(conf[self.path])):
                     out = out + ",\"" + conf[self.path][i] + "\""
                 return replacequotes(out[1:])
             elif isinstance(conf[self.path], pyhocon.config_tree.ConfigTree):
-                listaNames = ["options", "castMode", "charset", "metadataType", "position", "length", "path", "paths", "schema", "type"]
+                listaNames = ["applyConversions", "options", "castMode", "charset", "metadataType", "position", "length", "path", "paths", "schema", "type"]
                 out = "{\n" + " }"
                 for i in range(len(listaNames)):
                     if Dato(self.path+"."+listaNames[i]).decide(conf) != '':
