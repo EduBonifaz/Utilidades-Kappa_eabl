@@ -23,10 +23,11 @@ def RCRulesGen(lista: list, spreedsheet :str):
     wks.set_dataframe(RCvacio,(6,1),copy_head=False)
 
     for i in range(len(lista)):
-        conf = ConfigFactory.parse_file(lista[i])
+        conf = ConfigFactory.parse_string(lista[i])
 
         for j in range(len(conf["hammurabi.rules"])):
             confAux = conf["hammurabi.rules"][j]
+
             tipoRegla = dc.TipoRegla[ob.RULE_CLASS.decide(confAux)]
             newRule = []
 
@@ -59,5 +60,8 @@ def RCRulesGen(lista: list, spreedsheet :str):
             rc_rules_aux = pd.concat([rc_rules_aux, df])
 
     wks.set_dataframe(rc_rules_aux,(6,1),copy_head=False)
+    print("RCRulesGen")
+    print("https://docs.google.com/spreadsheets/d/"+spreedsheet)
+    print()
 
 

@@ -23,7 +23,7 @@ def DCQRRulesGen(lista: list, spreedsheet :str):
     dcqr_rules = pd.DataFrame([], columns=columns)
 
     for i in range(len(lista)):
-        conf = ConfigFactory.parse_file(lista[i])
+        conf = ConfigFactory.parse_string(lista[i])
         for j in range(len(conf["hammurabi.rules"])):
             newRule = [ob.PHYSICAL_NAME_OBJECT.decide(conf)]
             for dato in dataframeInfo:
@@ -39,5 +39,8 @@ def DCQRRulesGen(lista: list, spreedsheet :str):
             dcqr_rules = pd.concat([dcqr_rules, df])
 
     wks.set_dataframe(dcqr_rules,(5,1),copy_head=False)
+    print("DCQRRulesGen")
+    print("https://docs.google.com/spreadsheets/d/"+spreedsheet)
+    print()
     # dcqr_rules.to_csv('C:/Users/w10/Documents/Repositorios/DC-DQ-Rules/' + nameout,index=False)
 

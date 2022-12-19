@@ -22,7 +22,8 @@ TipoRegla = {"com.datio.hammurabi.rules.availability.DateRangeFileRule": "1.1-Co
                    "com.datio.hammurabi.rules.accuracy.ValueVariationRule": "6.4-Comparación del valor de los mismos datos entre períodos",
                    "com.datio.hammurabi.rules.accuracy.VolumetricTrendRule": "6.9-Tendencia de volumetría",
                    "com.datio.hammurabi.rules.accuracy.DynamicRatingVariationRule":"6.10-Comprobar que la tendencia (evolución) del valor de un mismo dato en el tiempo es aceptable con la variación referida a un catálogo",
-                   "com.datio.hammurabi.rules.accuracy.StaticRatingVariationRule": "6.10-Comprobar que la tendencia (evolución) del valor de un mismo dato en el tiempo es aceptable con la variación referida a un catálogo"}
+                   "com.datio.hammurabi.rules.accuracy.StaticRatingVariationRule": "6.10-Comprobar que la tendencia (evolución) del valor de un mismo dato en el tiempo es aceptable con la variación referida a un catálogo",
+                   "com.datio.hammurabi.rules.accuracy.HerfindahlRule": "6.11-Comparación del valor de un mismo dato entre periodos con la máxima variación referida a un catálogo dinámico."}
 
 DescipcionRegla = {"1.1-Comprobar que el archivo se haya recibido en la fecha y hora acordadas": "Escribir descripción",
                    "1.2-Actualización del valor de los datos en la fecha requerida": "Escribir descripción",
@@ -43,7 +44,8 @@ DescipcionRegla = {"1.1-Comprobar que el archivo se haya recibido en la fecha y 
                    "6.2-Comprobación de la sensibilidad del valor de un dato a un umbral": "Escribir descripción",
                    "6.4-Comparación del valor de los mismos datos entre períodos": "Escribir descripción",
                    "6.9-Tendencia de volumetría": "Escribir descripción",
-                   "6.10-Comprobar que la tendencia (evolución) del valor de un mismo dato en el tiempo es aceptable con la variación referida a un catálogo": "Escribir descripción"}
+                   "6.10-Comprobar que la tendencia (evolución) del valor de un mismo dato en el tiempo es aceptable con la variación referida a un catálogo": "Escribir descripción",
+                   "6.11-Comparación del valor de un mismo dato entre periodos con la máxima variación referida a un catálogo dinámico.": "Escribir descripción"}
 
 def MVPRules(name :str):
     aux = name.split("-")[0]
